@@ -20,11 +20,14 @@
     </style>
     <!-- Typed -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    
+  
     <title>Portfolio</title>
 </head>
 <body>
+    <!-- Barra de navegação -->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-2 fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-2 sticky-top">
             <div class="container" id="nav-container">
                 <a href="#" class="navbar-brand">
                     Victor portfolio
@@ -56,14 +59,31 @@
             </div>
         </nav>
     </header>
-    <section>
-        <div class="banner-area">
-            <img src="assets/img/banner1.jpg" class="img-fluid banner-img" >
-            <h1 class="text-white">Hi, Victor Here! <br><span class="element typed"></span></h1>
+
+    <!-- Main Area -->
+    <main class="p-5 bg-black p-lg-0 pt-lg-5 text-sm-start ">
+        <div class="container"> 
+            <div class="row  justify-content-around">
+                <div class="col-sm-4">
+                    <h1 class="text-white">Hi, Victor here!</h1>
+                    <span class="element typed lead"></span>
+                    <div class="showcase-text">
+                        <h1 >Become a Web Developer</h1>
+                        <p class="lead my-4">We focus on teaching our students the fundamentals of the latest
+                          and greatest technologies <span class="change">to prepare them for their first dev role</span> </p>
+                          
+                      </div>
+                </div>
+                <div class="col-4">
+                    <img src="assets/img/perfil-without-bg.jpeg" class="img-fluid w-100 mb-lg-0 d-none d-sm-block">
+                </div>
+            </div>
         </div>
-    </section>
+    </main>
+
     
-    <footer class="p-5 bg-dark text-white text-center position-relative">
+    <!-- Footer -->
+    <footer class="p-3 bg-dark text-white text-center fixed-bottom ">
         <div class="container">
           <p class="lead">Copyright &copy; 2021 | Portfolio</p>
           <a href="#contact"><i class="bi bi-twitter text-white mx-1"></i></a>
@@ -78,7 +98,7 @@
     <script>
         var typed = new Typed('.typed', {
         strings: ['I\'m a Student,', 'a Mathematician,', 'Web Developer', 'and more', 'You\'re Welcome!' ],
-        typeSpeed: 80,
+        typeSpeed: 70,
         backSpeed: 50,
         smartBackspace: true // Default value
         });
