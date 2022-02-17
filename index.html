@@ -69,22 +69,22 @@
                     <h3 class="text-white">Hi, I'm Victor.</h3>
                     <spam class="element typed h2"></spam>
                     <div class="showcase-text">
-                        <h1 class="my-4">Yep, I'm a mathematician, programmer and I still have hair</h1>
-                        <p class="lead my-4"> Trainee at <a href="https://www.ativmob.com/" target="_blank" class="link-light">Ativmob</a>. </p>
+                        <h1 class="my-5">Yep, I'm a mathematician, programmer and I still have hair</h1>
+                        <p class="lead my-5"> Trainee at <a href="https://www.ativmob.com/" target="_blank" class="link-light">Ativmob</a>. </p>
                           
                       </div>
                 </div>
                 <div class="col-4">
-                    <img src="assets/img/perfil-without-bg.jpeg" class="img-fluid w-100 mt-4 mb-lg-0 d-none d-md-block">
+                    <img src="assets/img/perfil-without-bg.jpeg" class="img-fluid w-100 mt-5 mb-lg-0 d-none d-md-block">
                 </div>
             </div>
         </div>
     </main>
 
     <!-- Carousel -->
-    <section id="about" class="p-3 bg-dark">
-  
-        <div id="slides-portfolio" class="carousel slide" data-bs-ride="carousel">
+    <section id="about" class="p-2 bg-dark">
+        
+            <div id="slides-portfolio" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#slides-portfolio" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
               <button type="button" data-bs-target="#slides-portfolio" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -122,12 +122,61 @@
               <span class="visually-hidden">Next</span>
             </button>
           </div>
+        
+    </section>
+    <!-- Skills -->
+
+    <!-- Progessbar -->
+    <section id="skills" class="bg-light p-5">
+        <div class="container">    
+            <div class="row justify-content-around align-items-center">
+                <div class="col-md-4">
+                    <label">PHP</label>
+                    <div class="progress mb-2">
+                        <div id="bar-1" class="progress-bar bg-primary" role="progressbar" style="width:0" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                      <label>Javascript</label>
+                      <div class="progress mb-2">
+                        <div id="bar-2" class="progress-bar bg-primary" role="progressbar" style="width:0" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                      <label">Bootstrap</label>
+                      <div  class="progress mb-2">
+                        <div id="bar-3" class="progress-bar bg-primary" role="progressbar" style="width:0" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                      <label">Be Dumb</label>
+                      <div class="progress mb-4">
+                        <div id="bar-4" class="progress-bar bg-primary" role="progressbar" style="width:0" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                </div>
+                <!-- Cards -->
+                <div class="col-md-2">
+                    <div class="card bg-dark text-light mb-2" style="width: 18rem;">
+                        <div class="card-body text-center ">
+                            <div class="h1 mb-3"><i class="bi bi-people-fill"></i></div>
+                            <h2 class="card-title text-light text-center">Social</h2>
+                            <p class="card-text">I'm sociable, I like to talk about Life, the Universe and Everything and build healthy friendships</p>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="card bg-dark text-light" style="width: 18rem;">
+                        <div class="card-body text-center ">
+                            <div class="h1 mb-3"><i class="bi bi-laptop"></i></div>
+                            <h2 class="card-title text-light text-center">Professional</h2>
+                            <p class="card-text">I am very Aplpied and I am always looking for new learning to improve my skills. I love study and learn more</p>
+                        </div>
+                      </div>
+                </div>
+            </div>
+            
+              
+        </div>
     </section>
 
 
     
     <!-- Footer -->
-    <footer class="p-3 bg-dark text-white text-center w-100 position-relative ">
+    <footer class="p-3 bg-secondary text-white text-center w-100 position-relative ">
         <div class="container">
           <p class="lead">Copyright &copy; 2021 | Portfolio</p>
           <a href="#contact"><i class="bi bi-twitter text-white mx-1"></i></a>
@@ -147,5 +196,7 @@
         smartBackspace: true // Default value
         });
     </script>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
