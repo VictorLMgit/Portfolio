@@ -6,6 +6,9 @@ html,body, #home{
     height: 100%;   
 }
 
+.img-perfil{
+    border-radius: 500px;
+}
 
 body{
     /* background: url("../img/capa.png");
@@ -13,5 +16,7 @@ body{
   
 }
 .element{
+
+    font-size: 4rem;
     color: rgb(194, 194, 194);
 }
