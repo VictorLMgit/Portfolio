@@ -2,6 +2,16 @@
     font-family: 'Poppins', sans-serif;
 }
 
+html,body, #home{
+    height: 100%;   
+}
+
+
+body{
+    /* background: url("../img/capa.png");
+    background-attachment: fixed; */
+  
+}
 .element{
     color: rgb(194, 194, 194);
 }
