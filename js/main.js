@@ -1,5 +1,9 @@
 $( document ).ready(function() {
 
+    // Init
+    $('.home').hide().fadeIn(1000)
+
+
     // Progress bar circle
     let containerA = document.getElementById("circleA");
   
@@ -135,6 +139,8 @@ $( document ).ready(function() {
         }
     
       });
+
+
     
 });
 
