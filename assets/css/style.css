@@ -20,6 +20,20 @@ body{
     color: rgb(194, 194, 194);
 }
 
+.card-projects{
+    height: 250px;
+    top: 0;
+    margin-bottom: 25px;
+    box-shadow: 0 0 5px 0px #e2e2e2;
+    position: relative;
+    transition: all .3s ease-in-out
+}
+.card-projects:hover{
+    top:-11px;
+    box-shadow: 0 0 7px 0px #fff;
+    border-bottom: 2px solid;
+}
+
 @media (max-width: 575.98px) { 
     .element{
         font-size: 3em;
