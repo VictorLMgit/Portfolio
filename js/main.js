@@ -141,7 +141,18 @@ $( document ).ready(function() {
       });
 
 
-    
+      $('#experience1').on('click', ()=>{
+        $('#texto_exp').load('assets/complements/experiencia1.html')
+        $('#experience1').parent().addClass('list-item-decored')
+        $('#experience2').parent().removeClass('list-item-decored')
+        
+      })
+      $('#experience2').on('click', ()=>{
+        $('#texto_exp').load('assets/complements/experiencia2.html')
+        $('#experience2').parent().addClass('list-item-decored')
+        $('#experience1').parent().removeClass('list-item-decored')
+        $('#experience1').parent().addClass('list-item')
+      })
 });
 
 
