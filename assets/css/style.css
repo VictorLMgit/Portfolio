@@ -67,6 +67,17 @@ body{
     color: #65DAF9;
 }
 
+.move{
+    animation: move_left 1s;
+}
+@keyframes move_left{
+    from{
+        transform: translateX(-35%);
+    }to{
+        transform: translateX(0);
+    }
+}
+
 @media (max-width: 575.98px) { 
     .element{
         font-size: 2em;
