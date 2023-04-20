@@ -104,7 +104,7 @@ $( document ).ready(function() {
         trailWidth: 1,
         svgStyle: {width: '100%', height: '100%'}
       });
-    var barBS = new ProgressBar.Line(lineBarLX, {
+    var barBS = new ProgressBar.Line(lineBarBS, {
         strokeWidth: 4,
         easing: 'easeInOut',
         duration: 1400,
@@ -122,15 +122,6 @@ $( document ).ready(function() {
         trailWidth: 1,
         svgStyle: {width: '100%', height: '100%'}
       });
-    var barAWS = new ProgressBar.Line(lineBarAWS, {
-        strokeWidth: 4,
-        easing: 'easeInOut',
-        duration: 1400,
-        color: '#FFEA82',
-        trailColor: '#eee',
-        trailWidth: 1,
-        svgStyle: {width: '100%', height: '100%'}
-      });
 
       let skillsAreaOffset = $('#skills').offset();
       let stopBarLine = 0;
@@ -140,10 +131,10 @@ $( document ).ready(function() {
     
         if(scroll > (skillsAreaOffset.top - 500) && stopBarLine == 0) {
             barPHP.animate(0.85);
-            barJS.animate(0.80);
-            barBS.animate(0.85);
+            barJS.animate(0.70);
+            barBS.animate(0.75);
             barBD.animate(1);
-            barAWS.animate(0.80)
+    
           stopBarLine = 1;
         }
     
@@ -180,6 +171,3 @@ $( document ).ready(function() {
   
     });
 });
-
-
-
