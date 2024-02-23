@@ -4,17 +4,10 @@
 
 html,body, #home{
     height: 100%;   
+    margin: 0;
 }
 
-.img-perfil{
-    border-radius: 500px;
-}
 
-body{
-    /* background: url("../img/capa.png");
-    background-attachment: fixed; */
-  
-}
 .element{
     letter-spacing: -0.05em;
     color: rgb(194, 194, 194);
@@ -66,9 +59,30 @@ body{
 .list-item-decored a{
     color: #65DAF9;
 }
+.title-card{
+    text-decoration: none;
+    color: white;
+}
+.title-card:hover{
+    text-decoration: none;
+    color: rgb(194, 194, 194);
+}
 
 .move{
     animation: move_left 1s;
+}
+
+.experience-section {
+    background-color: black;
+   
+    
+}
+.experience-section .container{
+    display: flex;
+    
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid ;
 }
 @keyframes move_left{
     from{
