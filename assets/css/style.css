@@ -8,6 +8,8 @@ body,
     height: 100%;
     margin: 0;
     background-color: black;
+    width: 100%;
+    
 }
 
 
@@ -87,6 +89,7 @@ body,
 .experience-section {
     background-color: black;
     width: 100%;
+    
 
 
 }
@@ -96,6 +99,8 @@ body,
     
     justify-content: center;
     align-items: center;
+    display:flex;
+    flex-direction: column;
 }
 
 .experiences .container{
@@ -132,11 +137,15 @@ body,
     margin-bottom: 5px;
     font-weight: 700;
     font-size: 16px;
+    
 }
 
 .experience-card .experience-description {
     font-size: 13px;
     color: #e5e7eb;
+    width: 100%;
+    
+
 }
 
 .experience-techs {
@@ -147,6 +156,8 @@ body,
     width: 100%;
 }
 .label-experience{
+    
+
     font-weight: 700;
     color: #5EEAD4;
     font-size: 35px;
@@ -208,7 +219,10 @@ body,
     .element {
         font-size: 2em;
     }
-
+    section, header{
+        display: none;
+    }
+   
 }
 
 
