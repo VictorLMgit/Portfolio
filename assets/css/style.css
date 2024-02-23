@@ -88,19 +88,16 @@ body,
 
 .experience-section {
     background-color: black;
-    width: 100%;
-    
-
+    width: 100%;  
 
 }
 
 .experience-section .container {
     display: flex;
-    
     justify-content: center;
     align-items: center;
     display:flex;
-    flex-direction: column;
+    /* flex-direction: column; */
 }
 
 .experiences .container{
