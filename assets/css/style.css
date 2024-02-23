@@ -1,40 +1,47 @@
-*{
+* {
     font-family: 'Poppins', sans-serif;
 }
 
-html,body, #home{
-    height: 100%;   
+html,
+body,
+#home {
+    height: 100%;
     margin: 0;
+    background-color: black;
 }
 
 
-.element{
+.element {
     letter-spacing: -0.05em;
     color: rgb(194, 194, 194);
 }
 
-.card-projects{
+.card-projects {
     height: 250px;
     top: 0;
     margin-bottom: 25px;
     box-shadow: 0 0 5px 0px #e2e2e2;
     position: relative;
-    transition: all .3s ease-in-out
+    transition: all .2s ease-in-out;
+
 }
-.card-projects:hover{
-    top:-11px;
+
+.card-projects:hover {
+    top: -11px;
     box-shadow: 0 0 7px 0px #fff;
     border-bottom: 2px solid;
 }
 
-.link-exp{
+.link-exp {
     cursor: pointer;
 }
-.link-exp:hover{
+
+.link-exp:hover {
     color: #65DAF9;
 }
-.list-item{
-    list-style: none ;
+
+.list-item {
+    list-style: none;
     border-top: none;
     border-left: 2px solid rgb(68, 68, 68);
     width: auto;
@@ -43,87 +50,192 @@ html,body, #home{
     cursor: pointer;
     transition: all 0.8s;
 }
-.list-item a{
+
+.list-item a {
     color: white;
 }
-.list-item-decored{
-    list-style: none ;
+
+.list-item-decored {
+    list-style: none;
     border-top: none;
     color: #65DAF9;
     border-left: 2px solid #65DAF9;
     width: auto;
     padding: 0.5rem 0.8rem;
     font-size: 14px;
-    cursor: pointer; 
+    cursor: pointer;
 }
-.list-item-decored a{
+
+.list-item-decored a {
     color: #65DAF9;
 }
-.title-card{
+
+.title-card {
     text-decoration: none;
     color: white;
 }
-.title-card:hover{
+
+.title-card:hover {
     text-decoration: none;
     color: rgb(194, 194, 194);
 }
 
-.move{
+.move {
     animation: move_left 1s;
 }
 
 .experience-section {
     background-color: black;
-   
-    
+    width: 100%;
+
+
 }
-.experience-section .container{
+
+.experience-section .container {
     display: flex;
     
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-    border: 1px solid ;
 }
-@keyframes move_left{
-    from{
+
+.experiences .container{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.experience-card {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 32px;
+    box-shadow: none;
+    width: 70%;
+}
+
+
+.experience-card:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    gap: 20px;
+    border-radius: 7px;
+    color: #fffefefd;
+}
+
+.experience-card .experience-date {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.experience-card .experience-title {
+    color: #5EEAD4;
+    margin-bottom: 5px;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.experience-card .experience-description {
+    font-size: 13px;
+    color: #e5e7eb;
+}
+
+.experience-techs {
+    display: flex;
+    position: absolute;
+    bottom: 10px;
+    gap: 20px;
+    width: 100%;
+}
+.label-experience{
+    font-weight: 700;
+    color: #5EEAD4;
+    font-size: 35px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.experience-tech {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 11px;
+    border: 1px solid rgb(107, 241, 129);
+    background-color: #2DD4BF1A;
+    padding: 3px;
+    color: #5EEAD4;
+    border-radius: 0.25rem;
+    width: 70px;
+}
+
+.aboutme-section {  
+    margin-bottom: 80px;
+
+}
+
+.aboutme-section .container {
+    
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    margin-bottom: 25px;
+    width: 100%;
+}
+.aboutme-section .container .label-aboutme{
+    font-weight: 700;
+    justify-self: self-start;
+    color: #5EEAD4;
+    font-size: 30px;
+}
+.aboutme-section .container .aboutme{
+    
+    color: #e2e2e2;
+    font-size: 15px;
+    width: 50%;
+}
+
+@keyframes move_left {
+    from {
         transform: translateX(-35%);
-    }to{
+    }
+
+    to {
         transform: translateX(0);
     }
 }
 
-@media (max-width: 575.98px) { 
-    .element{
+@media (max-width: 575.98px) {
+    .element {
         font-size: 2em;
     }
-    
- }
+
+}
 
 
-@media (min-width: 576px) and (max-width: 767.98px) { 
-    .element{
-        font-size: 3em;
-    }
-    
- }
-
-
-@media (min-width: 768px) and (max-width: 991.98px) { 
-    .element{
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .element {
         font-size: 3em;
     }
 
- }
+}
 
 
-@media (min-width: 992px) and (max-width: 1199.98px) { 
-    .element{
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .element {
+        font-size: 3em;
+    }
+
+}
+
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .element {
         font-size: 4em;
     }
 }
 
-@media (min-width: 1200px) { 
-    .element{
+@media (min-width: 1200px) {
+    .element {
         font-size: 5em;
     }
 }
